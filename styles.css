@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo img{
+    height: 60px;
+    width: auto;
+}
+
+#toggle-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+#toggle-btn img {
+    height: 30px;
+}
+
+#nav-content{
+    display: none;
+}
+
+#socials{
+    display: none;
+}
+
+.hero-section{
+
+    img {
+        max-width: 100%;
+        max-height: 1400px;
+    }
+
+    #btn {
+        cursor: pointer;
+        position: relative;
+        margin: 0 13px;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /* padding: 10px 30px; */
+        border: none;
+        background: rgb(6,6,6);
+        background: linear-gradient(90deg, rgba(6,6,6,1) 0%, rgba(99,99,99,1) 100%);
+    }
+
+}
+
+ #hero-text{
+        background-color: #b2b2b2;
+        text-align: center;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        bottom: 50px;
+    
+        /* div{
+            margin: 4px 50px;
+        } */
+    }
+
+.about{
+    position: relative;
+    bottom: 50px;
+   background-color: #D9D6DF;
+   padding: 30px 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    img{
+        max-width: 100%;
+        max-height: 1000px;
+    }
+
+    button{
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 7px 30px;
+        font-weight: bold;
+    }
+
+    #card-1{
+        margin: 50px 0;
+    }
+
+    #card-2{
+        margin:25px 0;
+    }
+
+    #card-3{
+        margin: 50px 0;
+    }
+
+    #description {
+        margin: 20px 0;
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    #description h4{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #btn{
+        padding: 10px 30px;
+        bottom: 80px;
+    }
+
+    .hero-section{
+        #hero-text{
+            div{
+                margin: 4px 50px;
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #toggle-btn{
+        display: none;
+    }
+
+    #nav-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    #nav-content > div {
+        margin: 0 10px;
+    }
+
+    #socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 30px;
+
+        img {
+            height: 22px;
+            margin: 0 2px;
+        }
+    }
+
+    #btn {
+        bottom: 100px;
+        padding: 10px 60px;
+    }
+
+    #hero-text{
+        flex-direction: row;
+        font-weight: 200;
+
+        div{
+            font-size: smaller;
+            margin: 10px 25px;
+            line-height: 15px;
+        }
+    }
+
+    .cards{
+        flex-direction: row;
+
+        #card-1{
+            margin: 50px 0;
+            text-align: left;
+        }
+    
+        #card-2{
+            margin: 50px 30px;
+            text-align: center;
+        }
+    
+        #card-3{
+            margin: 50px 0;
+            text-align: right;
+        }
+    
+        #description {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: medium;
+        }
+    
+        #description h4{
+            margin-bottom: 15px;
+        }
+    }
+       
+}
+
+@media (min-width: 1024px) {
+    #hero-text{
+        padding: 50px 0;
+
+        div{
+            font-size: small;
+            margin: 10px 60px;
+            line-height: 15px;
+        }
+    }
+
+    #btn{
+        bottom: 170px;
+        padding: 15px 90px;
+    }
+}
